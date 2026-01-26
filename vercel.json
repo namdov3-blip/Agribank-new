@@ -1,0 +1,45 @@
+{
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/api/health",
+            "destination": "/api/health"
+        },
+        {
+            "source": "/api/auth/(.*)",
+            "destination": "/api/auth"
+        },
+        {
+            "source": "/api/transactions/(.*)",
+            "destination": "/api/transactions"
+        },
+        {
+            "source": "/api/projects/(.*)",
+            "destination": "/api/projects"
+        },
+        {
+            "source": "/api/bank/(.*)",
+            "destination": "/api/bank"
+        },
+        {
+            "source": "/api/users/(.*)",
+            "destination": "/api/users"
+        },
+        {
+            "source": "/api/settings/(.*)",
+            "destination": "/api/settings"
+        },
+        {
+            "source": "/api/audit-logs",
+            "destination": "/api/audit"
+        },
+        {
+            "source": "/api/events/(.*)",
+            "destination": "/api/events"
+        },
+        {
+            "source": "/((?!api/).*)",
+            "destination": "/index.html"
+        }
+    ]
+}
